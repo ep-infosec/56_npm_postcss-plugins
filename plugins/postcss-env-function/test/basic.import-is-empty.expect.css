@@ -1,0 +1,20 @@
+body {
+	order: 1;
+	padding: env(--some-custom-padding);
+}
+
+@media (min-width: env(--another-custom-width)) {
+	body {
+		order: 2;
+	}
+}
+
+@media (width > env(--another-custom-width)) {
+	body {
+		order: 3;
+	}
+}
+
+html {
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);
+}

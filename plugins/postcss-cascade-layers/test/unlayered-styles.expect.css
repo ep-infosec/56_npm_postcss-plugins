@@ -1,0 +1,20 @@
+
+	target {
+		color: red;
+	}
+
+target:not(#\#) {
+		color: green;
+	}
+
+a:not(#\#):not(#\#) {
+	color: purple;
+}
+
+target:not(#\#):not(#\#) {
+  color: green;
+}
+
+span:not(#\#):not(#\#) h1, span:not(#\#):not(#\#) p {
+  color:red;
+}

@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+yarn.lock
+*.result.css
+*.result.css.map
+!.editorconfig
+!.gitignore
+!.rollup.js
+!.tape.js
+!.travis.yml

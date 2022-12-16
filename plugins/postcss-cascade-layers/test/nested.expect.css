@@ -1,0 +1,69 @@
+
+	@keyframes slide-left {
+		from {
+			margin-left: 0;
+		}
+
+		to {
+			margin-left: -100%;
+		}
+	}
+
+	@font-face {
+		font-family: "Open Sans";
+		src: url("/fonts/OpenSans-Regular-webfont.woff2#layered") format("woff2"),
+			url("/fonts/OpenSans-Regular-webfont.woff#layered") format("woff");
+	}@font-face {
+	font-family: "Open Sans";
+	src: url("/fonts/OpenSans-Regular-webfont.woff2#unlayered") format("woff2"),
+		url("/fonts/OpenSans-Regular-webfont.woff#unlayered") format("woff");
+}
+
+target {
+			color: yellow;
+		}
+
+target:not(#\#) {
+		color: red;
+	}
+
+p:not(#\#) {
+		color: blue;
+	}
+
+i:not(#\#) {
+		color: red;
+	}
+
+target:not(#\#):not(#\#):not(#\#) {
+			color: yellow;
+		}
+
+target:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+			color: yellow;
+		}
+
+h1:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+		color: pink;
+	}
+
+@media (prefers-color-scheme: dark) {
+		h2:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+			color: red;
+			background: black;
+		}
+	}
+
+@media (prefers-color-scheme: dark) {
+			target:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+				color: lime;
+			}
+	}
+
+target:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+			color: yellow;
+		}
+
+target:not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#):not(#\#) {
+		color: red;
+	}

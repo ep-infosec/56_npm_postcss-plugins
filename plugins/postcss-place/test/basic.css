@@ -1,0 +1,39 @@
+a {
+	place-content: first second;
+	place-items: first second;
+	place-self: first second;
+}
+
+A {
+	PLACE-CONTENT: first second;
+	PLACE-ITEMS: first second;
+	PLACE-SELF: first second;
+}
+
+b {
+	place-content: first;
+	place-items: first;
+	place-self: first;
+}
+
+c {
+	place-content: var(--first) second;
+	place-items: var(--first) second;
+	place-self: var(--first) second;
+}
+
+d {
+	place-content: first var(--second);
+	place-items: first var(--second);
+	place-self: first var(--second);
+}
+
+e {
+	place-content: var(--first, --fallback) second;
+	place-items: var(--first, --fallback) second;
+	place-self: var(--first, --fallback) second;
+}
+
+.test-unparseable-var-in-place-declaration {
+	place-content: var(; );
+}

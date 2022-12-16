@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("/fonts/OpenSans-Regular-webfont.woff2#unlayered") format("woff2"),
+		url("/fonts/OpenSans-Regular-webfont.woff#unlayered") format("woff");
+}
+
+@layer A {
+	target {
+		color: red;
+	}
+
+	p {
+		color: blue;
+	}
+
+	@layer Z {
+		target {
+			color: yellow;
+		}
+	}
+
+	i {
+		color: red;
+	}
+}
+
+@layer B {
+	@keyframes slide-left {
+		from {
+			margin-left: 0;
+		}
+
+		to {
+			margin-left: -100%;
+		}
+	}
+
+	@font-face {
+		font-family: "Open Sans";
+		src: url("/fonts/OpenSans-Regular-webfont.woff2#layered") format("woff2"),
+			url("/fonts/OpenSans-Regular-webfont.woff#layered") format("woff");
+	}
+
+	@layer Z {
+		target {
+			color: yellow;
+		}
+	}
+}
+
+@layer C {
+	@layer Z {
+		target {
+			color: yellow;
+		}
+	}
+
+	h1 {
+		color: pink;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		h2 {
+			color: red;
+			background: black;
+		}
+
+		@layer Z {
+			target {
+				color: lime;
+			}
+		}
+	}
+}
+
+@layer C.D {
+	target {
+		color: red;
+	}
+
+	@layer Z {
+		target {
+			color: yellow;
+		}
+	}
+}

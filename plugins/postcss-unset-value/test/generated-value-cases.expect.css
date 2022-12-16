@@ -1,0 +1,57 @@
+.order-0 {
+	order: initial !important;
+	order: unset !important;
+}
+
+.order-1 {
+	order: var(1, unset);
+}
+
+.order-2 {
+	order: var(unset, 1);
+}
+
+.order-3 {
+	order: var(unset, unset);
+}
+
+.order-4 {
+	order: preunset;
+}
+
+.order-5 {
+	order: pre unset;
+}
+
+.order-6 {
+	order: pre,unset;
+}
+
+.order-7 {
+	order: unsetpost;
+}
+
+.order-8 {
+	order: unset post;
+}
+
+.order-9 {
+	order: unset,post;
+}
+
+/* unset */
+
+:root {
+	--some-var: unset;
+}
+
+.content {
+	content: 'unset';
+}
+
+@supports (order: unset) {
+	.support {
+		order: initial;
+		order: unset;
+	}
+}

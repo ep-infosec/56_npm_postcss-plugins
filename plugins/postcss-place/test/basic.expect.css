@@ -1,0 +1,77 @@
+a {
+	align-content: first;
+	justify-content: second;
+	place-content: first second;
+	align-items: first;
+	justify-items: second;
+	place-items: first second;
+	align-self: first;
+	justify-self: second;
+	place-self: first second;
+}
+
+A {
+	align-content: first;
+	justify-content: second;
+	PLACE-CONTENT: first second;
+	align-items: first;
+	justify-items: second;
+	PLACE-ITEMS: first second;
+	align-self: first;
+	justify-self: second;
+	PLACE-SELF: first second;
+}
+
+b {
+	align-content: first;
+	justify-content: first;
+	place-content: first;
+	align-items: first;
+	justify-items: first;
+	place-items: first;
+	align-self: first;
+	justify-self: first;
+	place-self: first;
+}
+
+c {
+	align-content: var(--first);
+	justify-content: second;
+	place-content: var(--first) second;
+	align-items: var(--first);
+	justify-items: second;
+	place-items: var(--first) second;
+	align-self: var(--first);
+	justify-self: second;
+	place-self: var(--first) second;
+}
+
+d {
+	align-content: first;
+	justify-content: var(--second);
+	place-content: first var(--second);
+	align-items: first;
+	justify-items: var(--second);
+	place-items: first var(--second);
+	align-self: first;
+	justify-self: var(--second);
+	place-self: first var(--second);
+}
+
+e {
+	align-content: var(--first, --fallback);
+	justify-content: second;
+	place-content: var(--first, --fallback) second;
+	align-items: var(--first, --fallback);
+	justify-items: second;
+	place-items: var(--first, --fallback) second;
+	align-self: var(--first, --fallback);
+	justify-self: second;
+	place-self: var(--first, --fallback) second;
+}
+
+.test-unparseable-var-in-place-declaration {
+	align-content: var(; );
+	justify-content: var(; );
+	place-content: var(; );
+}
